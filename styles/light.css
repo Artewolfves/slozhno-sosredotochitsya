@@ -27,7 +27,7 @@
 
 .page.theme_light .decorated__element::after {
   color: transparent;
-  background-color: transparent;;
+  background-color: transparent;
   box-shadow: none;
 }
 
