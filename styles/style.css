@@ -141,12 +141,10 @@
   padding-block-start: 40px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
-  
 }
 
 .articles {
   display: grid;
-  /* padding-block-end: 50px; */
   gap: 20px;
 }
 
@@ -269,16 +267,21 @@
     max-inline-size: 364px;
   }
   
+  .main__content {
+    background-color: var(--bg-color);
+    padding-block-start: 60px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+  }
+
   .article__start {
     grid-template-columns: 1fr 2fr;
-    margin-block-start: 60px;
     gap: 20px;
   }
 
   .main__title__start {
     grid-row-start: 1;
     grid-row-end: 5;
-
   }
 
   .article__second {
@@ -364,7 +367,7 @@
     inset-inline-end: -35px;
   } 
   
-  .header__title{
+  .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -20px;
   }
