@@ -364,6 +364,11 @@
     inset-inline-end: -35px;
   } 
   
+  .header__title{
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-inline-start: -20px;
+  }
+
   .header__theme-menu {
     justify-self: center;
     padding-block-start: 0px;
