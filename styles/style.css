@@ -146,7 +146,6 @@
 .articles {
   display: grid;
   gap: 20px;
-  /* padding-block-start: 50px; */
 }
 
 .main__title {
@@ -157,7 +156,6 @@
   font-weight: 700;
   line-height: 23.4px;
   text-align: start;
-  margin-block-end: 20px;
 }
 
 .main__subtitle {
@@ -168,7 +166,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
-  margin-block-end: 10px;
 }
 
 .additional__subtitle {
@@ -188,6 +185,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px;
+  padding-block-start: 10px;
 }
 
 .article__causes {
@@ -259,14 +257,14 @@
   }
 
   .decorated__element::before {
-    inset-block-start: -3px;
-    inset-inline-end: -24px;
+    inset-block-start: 7px;
+    inset-inline-end: -17px;
   }
-
+  
   .decorated__element::after {
-    inset-block-start: 5px;
-    inset-inline-end: -43px;
-  } 
+    inset-block-start: 14px;
+    inset-inline-end: -35px;
+  }
 
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -356,6 +354,16 @@
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
+
+  .decorated-zone::before {
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+
+  .decorated-zone::after {
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
+  }
 }
 
 @media (1024px <= width) {
@@ -368,7 +376,7 @@
   .decorated__element::after {
     inset-block-start: 14px;
     inset-inline-end: -35px;
-  } 
+  }
   
   .header__title {
     margin-inline-start: -20px;
@@ -397,16 +405,6 @@
   .main__title__causes {
     max-inline-size: 30%;
     grid-column: span 3;
-  }
-
-  .decorated-zone::before {
-    inset-block-start: 20px;
-    inset-inline-end: 20px;
-  }
-
-  .decorated-zone::after {
-    inset-block-end: 20px;
-    inset-inline-start: 20px;
   }
 }
 
