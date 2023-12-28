@@ -46,12 +46,12 @@
 
   .page.theme_auto .decorated__element::before {
     color: transparent;
-    background-image: none; 
+    background-image: none;
   }
 
   .page.theme_auto .decorated__element::after {
-    color: transparent; 
+    color: transparent;
     background-color: transparent;
-    box-shadow: none; 
-  } 
+    box-shadow: none;
+  }
 }

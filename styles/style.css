@@ -56,7 +56,7 @@
   box-shadow: 0 0 4px 3px var(--title-color);
   inset-block-start: 5px;
   inset-inline-end: -44px;
-} 
+}
 
 .decorated-zone::before,
 .decorated-zone::after {
