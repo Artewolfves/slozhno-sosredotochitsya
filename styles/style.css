@@ -134,6 +134,7 @@
   text-shadow: 4px 4px 0 var(--shadow-color);
   font-family: var(--accent-font), monospace;
   text-transform: lowercase;
+  line-height: 82.5%;
 }
 
 .main__content {
@@ -277,7 +278,6 @@
   }
   
   .main__content {
-    background-color: var(--bg-color);
     padding-block-start: 60px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
