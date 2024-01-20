@@ -219,9 +219,11 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-block-start: 10px;
 }
 
 .image {
+  display: block;
   inline-size: 100%;
   /* block-size: 100%; */
   object-fit: cover;
@@ -254,6 +256,7 @@
     padding-inline-start: 20px;
     padding-inline-end: 20px;
     padding-block-start: 20px;
+    padding-block-end: 20px;
   }
 
   .decorated__element::before {
@@ -284,12 +287,11 @@
 
   .article__about {
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
 
   .main__title__about {
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 3;
   }
 
   .article__causes {
@@ -319,8 +321,9 @@
   .image__card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
     gap: 20px;
+    margin-block-start: 20px;
   }
 
   .image {
@@ -350,6 +353,10 @@
   .img__street {
     grid-column: 2/4;
     grid-row: 3/4;
+  }
+
+  .footer {
+    padding: 20px;
   }
 
   .footer__title {
@@ -392,6 +399,19 @@
   .header__content {
     justify-self: end;
     max-inline-size: 491px;
+  }
+
+  .main__content {
+    padding-block-start: 60px;
+    padding-inline-start: 20px;
+  }
+
+  .article__about {
+    column-gap: 0;
+  }
+
+  .indent {
+    padding-inline-start: 7px;
   }
 
   .article__causes {
