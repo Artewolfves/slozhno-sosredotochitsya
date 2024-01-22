@@ -29,8 +29,6 @@
 
 .decorated__element {
   position: absolute;
-  font-family: var(--accent-font), monospace;
-  color: var(--accent-color);
   inset-block-start: 15px;
   inset-inline-end: 64px;
 }
@@ -44,6 +42,8 @@
   text-transform: uppercase;
   inset-block-start: -2px;
   inset-inline-end: -25px;
+  font-family: var(--accent-font), monospace;
+  color: var(--accent-color);
 }
 
 .decorated__element::after {
@@ -295,6 +295,10 @@
     grid-row-end: 3;
   }
 
+  .table {
+    grid-area: auto / 2;
+  }
+
   .article__causes {
     margin-block-start: 80px;
   }
@@ -415,6 +419,10 @@
     padding-inline-start: 7px;
   }
 
+  .indent__adviсe {
+    margin-inline-start: -7px;
+  }
+
   .article__causes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -425,4 +433,3 @@
     grid-column: span 3;
   }
 }
-

@@ -21,14 +21,11 @@
 }
 
 .page.theme_light .decorated__element::before {
-  color: transparent;
-  background-image: none;
+  display: none;
 }
 
 .page.theme_light .decorated__element::after {
-  color: transparent;
-  background-color: transparent;
-  box-shadow: none;
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,5 +39,21 @@
   --shadow-color: #FF0070;
   --subtitle-color: #353430;
   --border-shadow: rgba(50, 49, 45, 0.40);
+  }
+
+  .page.theme_dark .decorated__element::before {
+    display: block;
+  }
+
+  .decorated__element::before {
+    display: none;
+  }
+
+  .page.theme_dark .decorated__element::after {
+    display: block;
+  }
+
+  .decorated__element::after {
+    display: none;
   }
 }
